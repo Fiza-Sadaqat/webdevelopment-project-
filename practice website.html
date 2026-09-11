@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Group of Khawaja Brothers</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Style (Aap ki main website jaisa pinkish touch) */
+        header {
+            width: 100%;
+            background-color: #ffe4e1;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        /* Back to Home Button */
+        .back-home {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* Main Container */
+        .products-container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* Stuff Category Title */
+        .category-title {
+            font-size: 1.8rem;
+            color: #444;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff69b4;
+            padding-left: 15px;
+            font-weight: bold;
+        }
+
+        /* Products Grid Setup */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            width: 100%;
+        }
+
+        /* Individual Product Card */
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.15);
+        }
+
+        /* Image Wrapper for fixed size ratio */
+        .image-wrapper {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .image-wrapper img {
+            transform: scale(1.05);
+        }
+
+        /* Details Area */
+        .product-details {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-details h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Fabric Stuff Tag */
+        .stuff-tag {
+            align-self: flex-start;
+            background-color: #fff0f5;
+            color: #ff69b4;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .product-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        /* Wholesale Price Style */
+        .price-box {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .price-box span {
+            font-size: 0.85rem;
+            color: #777;
+            font-weight: normal;
+        }
+
+        /* Inquiry Button */
+        .btn-inquiry {
+            display: block;
+            text-align: center;
+            background-color: #25d366; /* WhatsApp Green Color */
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-inquiry:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Premium Fabric Stuffs</h1>
+        <a href="shope.html" class="back-home">← Back to Home</a>
+    </header>
+
+    <main class="products-container">
+
+        <!-- ================= SUMMER WEAR STUFFS ================= -->
+        <div class="category-title">Summer Collection</div>
+        <div class="products-grid">
+            
+            <!-- Card 1: Lawn (Yahan summer.png lagi hai) -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="summer.png" alt="Summer Collection">
+                </div>
+                <div class="product-details">
+                    <div>
+                        <h3>Super Digital Printed 3-Piece</h3>
+                        <div class="stuff-tag">Stuff: 90/70 Airjet Lawn</div>
+                        <div class="product-meta">Voile Dupatta, Premium colors, 100% color guarantee.</div>
+                    </div>
+                    <div>
+                        <div class="price-box">Rs. 1,650 <span>(Wholesale Price)</span></div>
+                        <a href="#" class="btn-inquiry">Order on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Cotton (Yahan bhi aap summer.png use kar sakti hain ya badal sakti hain) -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="summer.png" alt="Cotton Collection">
+                </div>
+                <div class="product-details">
+                    <div>
+                        <h3>Gents Premium Egyptian Cotton</h3>
+                        <div class="stuff-tag">Stuff: Latha & Soft Cotton</div>
+                        <div class="product-meta">4.5 Meter cutting, liquid ammonia finish, premium box packing.</div>
+                    </div>
+                    <div>
+                        <div class="price-box">Rs. 1,800 <span>(Wholesale Price)</span></div>
+                        <a href="#" class="btn-inquiry">Order on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Bridal/Luxury (Yahan bridal.png lagi hai) -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="bridal.png" alt="Luxury Bridal Collection">
+                </div>
+                <div class="product-details">
+                    <div>
+                        <h3>Luxury Embroidered Organza</h3>
+                        <div class="stuff-tag">Stuff: Premium Organza / Chiffon</div>
+                        <div class="product-meta">Heavy sequence work front, plain back with chiffon dupatta.</div>
+                    </div>
+                    <div>
+                        <div class="price-box">Rs. 2,450 <span>(Wholesale Price)</span></div>
+                        <a href="#" class="btn-inquiry">Order on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ================= WINTER WEAR STUFFS ================= -->
+        <div class="category-title">Winter Collection</div>
+        <div class="products-grid">
+            
+            <!-- Card 4: Khaddar (Yahan winter.png lagi hai) -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="winter.png" alt="Winter Khaddar Collection">
+                </div>
+                <div class="product-details">
+                    <div>
+                        <h3>Kamalia Handloom Khaddar</h3>
+                        <div class="stuff-tag">Stuff: Pure Cotton Khaddar</div>
+                        <div class="product-meta">Heavy stuff for intense winter, fast colors, best for daily wear.</div>
+                    </div>
+                    <div>
+                        <div class="price-box">Rs. 1,400 <span>(Wholesale Price)</span></div>
+                        <a href="#" class="btn-inquiry">Order on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Linen (Yahan bhi winter.png lagi hai) -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="winter.png" alt="Winter Linen Collection">
+                </div>
+                <div class="product-details">
+                    <div>
+                        <h3>Digital Linen 3-Piece Suits</h3>
+                        <div class="stuff-tag">Stuff: Heavy 68/68 Linen</div>
+                        <div class="product-meta">Matching linen dupatta, trendy dark winter colors.</div>
+                    </div>
+                    <div>
+                        <div class="price-box">Rs. 1,550 <span>(Wholesale Price)</span></div>
+                        <a href="#" class="btn-inquiry">Order on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Velvet (Yahan bridal.png lagayi hai kyunki velvet semi-formal/luxury me aata hai) -->
+            <div class="product-card">
+                <div class="image-wrapper">
+                    <img src="bridal.png" alt="Velvet Collection">
+                </div>
+                <div class="product-details">
+                    <div>
+                        <h3>Premium Micro Velvet 9000</h3>
+                        <div class="stuff-tag">Stuff: Micro Velvet Shawls</div>
